@@ -15,6 +15,9 @@
 		3EE470801D5B1FB300D3CB31 /* WebViewCommunicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4707F1D5B1FB300D3CB31 /* WebViewCommunicationController.swift */; };
 		3EE470831D5B2A3600D3CB31 /* communication.html in Resources */ = {isa = PBXBuildFile; fileRef = 3EE470821D5B2A3600D3CB31 /* communication.html */; };
 		3EE470851D5B3EDD00D3CB31 /* google-login-clone in Resources */ = {isa = PBXBuildFile; fileRef = 3EE470841D5B3EDD00D3CB31 /* google-login-clone */; };
+		3EE470891D5B415900D3CB31 /* WebViewGoogleLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE470881D5B415900D3CB31 /* WebViewGoogleLoginController.swift */; };
+		3EE4708B1D5B437300D3CB31 /* WebViewGoogleActualLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4708A1D5B437300D3CB31 /* WebViewGoogleActualLoginController.swift */; };
+		3EE4708D1D5B4D0700D3CB31 /* JSVirtualMachineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4708C1D5B4D0700D3CB31 /* JSVirtualMachineController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		3EE4707F1D5B1FB300D3CB31 /* WebViewCommunicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewCommunicationController.swift; sourceTree = "<group>"; };
 		3EE470821D5B2A3600D3CB31 /* communication.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = communication.html; path = Resources/communication.html; sourceTree = "<group>"; };
 		3EE470841D5B3EDD00D3CB31 /* google-login-clone */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "google-login-clone"; path = "Resources/google-login-clone"; sourceTree = "<group>"; };
+		3EE470881D5B415900D3CB31 /* WebViewGoogleLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewGoogleLoginController.swift; sourceTree = "<group>"; };
+		3EE4708A1D5B437300D3CB31 /* WebViewGoogleActualLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewGoogleActualLoginController.swift; sourceTree = "<group>"; };
+		3EE4708C1D5B4D0700D3CB31 /* JSVirtualMachineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSVirtualMachineController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,9 @@
 				3EE470761D5B1D0B00D3CB31 /* LaunchScreen.storyboard */,
 				3EE470791D5B1D0B00D3CB31 /* Info.plist */,
 				3EE4707F1D5B1FB300D3CB31 /* WebViewCommunicationController.swift */,
+				3EE470881D5B415900D3CB31 /* WebViewGoogleLoginController.swift */,
+				3EE4708A1D5B437300D3CB31 /* WebViewGoogleActualLoginController.swift */,
+				3EE4708C1D5B4D0700D3CB31 /* JSVirtualMachineController.swift */,
 			);
 			path = WarsawNative;
 			sourceTree = "<group>";
@@ -154,8 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EE4708B1D5B437300D3CB31 /* WebViewGoogleActualLoginController.swift in Sources */,
+				3EE470891D5B415900D3CB31 /* WebViewGoogleLoginController.swift in Sources */,
 				3EE470701D5B1D0B00D3CB31 /* ViewController.swift in Sources */,
 				3EE470801D5B1FB300D3CB31 /* WebViewCommunicationController.swift in Sources */,
+				3EE4708D1D5B4D0700D3CB31 /* JSVirtualMachineController.swift in Sources */,
 				3EE4706E1D5B1D0B00D3CB31 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
