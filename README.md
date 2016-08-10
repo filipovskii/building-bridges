@@ -1,7 +1,8 @@
-# WarsawNative
+# Building Bridges
+### How we can utilize Native APIs in JavaScript apps
 
-Talk about iOS native APIs that allow us use JavaScript.
+These are the slides and the source code from a presentation I gave at
+WarsawJS.
 
-![Logo](/pictures/logo/warsawjs-logo-light.png)
-
+![WarsawNative App](pictures/launch-screen.png)
 
