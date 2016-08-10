@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <body>
+    <h3>I'm a WebView</h3>
+    <input id="i">
+    <button id="b">Send Message from the WebView</button>
+    <p id="m" />
+
+    <script>
+      b.addEventListener('click', function() {
+        var msg = i.value;
+        window.sendMsg(msg);
+      });
+      window.receiveMsg = function(msg) {
+        m.innerText = msg;
+      }
+    </script>
+  </body>
+</html>
