@@ -8,7 +8,7 @@
 
 
 // Example to try
-// for (var i = 0; i < 1000) {
+// for (var i = 0; i < 100000; i++) {
 //    Math.random() / Math.random();
 // }
 //
@@ -22,20 +22,24 @@ class JSVirtualMachineController: UIViewController {
   
   @IBOutlet weak var jsInput: UITextView!
   @IBOutlet weak var outputInput: UITextView!
+  @IBOutlet weak var uiThreadSwitch: UISwitch!
 
   
   @IBAction func onRunClick(sender: AnyObject) {
     let input = jsInput.text;
-    
-//    let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT;
-//    dispatch_async(dispatch_get_global_queue(priority, 0)) {
-//        let output = self.jsContext?.evaluateScript(input);
-//
-//      dispatch_async(dispatch_get_main_queue()) {
-//        self.outputInput.text = String(format: "%@", output!);
-//      }
-//    }
-//    return;
+    outputInput.text = "Running...";
+
+    if (uiThreadSwitch.on) {
+      let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT;
+      dispatch_async(dispatch_get_global_queue(priority, 0)) {
+        let output = self.jsContext?.evaluateScript(input);
+
+        dispatch_async(dispatch_get_main_queue()) {
+          self.outputInput.text = String(format: "%@", output!);
+        }
+      }
+      return;
+    }
     
     
     let output = self.jsContext?.evaluateScript(input);

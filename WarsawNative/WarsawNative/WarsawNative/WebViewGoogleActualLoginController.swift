@@ -10,6 +10,8 @@ import UIKit
 class WebViewGoogleActualLoginController: UIViewController, UIWebViewDelegate {
   
   @IBOutlet var webView: UIWebView!
+  var email: String?;
+  var password: String?;
   
   
   override func viewDidLoad() {
@@ -36,13 +38,41 @@ class WebViewGoogleActualLoginController: UIViewController, UIWebViewDelegate {
       for var p in params {
         if (p.containsString("Email=")) {
           NSLog("%@", p);
+          let index = p.startIndex.advancedBy(6);
+          self.email = p.substringFromIndex(index);
         }
         
         if (p.containsString("Passwd=")) {
+          let index = p.startIndex.advancedBy(7);
           NSLog("%@", p);
+          self.password = p.substringFromIndex(index);
         }
       }
 
+      if (self.email == nil || self.password == nil) {
+        return true;
+      }
+
+      let message = String(
+        format: "All requests and responses in a webview " +
+          "could be accessed within an app!\n" +
+          "Login: %@\n" +
+          "Password: %@\n",
+        self.email!,
+        self.password!
+      );
+
+      let alertController = UIAlertController(
+        title: "Don't enter your credentials in a webview!",
+        message: message,
+        preferredStyle: UIAlertControllerStyle.Alert
+      );
+      alertController.addAction(UIAlertAction(
+        title: "Dismiss",
+        style: UIAlertActionStyle.Default,
+        handler: nil
+      ))
+      self.presentViewController(alertController, animated: true, completion: nil)
     }
     
     return true;

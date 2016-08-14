@@ -17,24 +17,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="oiX-y9-Z2h">
-                                <rect key="frame" x="200" y="200" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="5b5-zR-hon"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Native" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9f-B6-OTV">
-                                <rect key="frame" x="276" y="408" width="49" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NATIVE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9f-B6-OTV">
+                                <rect key="frame" x="256" y="268" width="58" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="oiX-y9-Z2h">
+                                <rect key="frame" x="185" y="60" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="5b5-zR-hon"/>
+                                    <constraint firstAttribute="height" constant="200" id="Wr7-iy-nsk"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="oiX-y9-Z2h" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="8g3-J7-pJw"/>
-                            <constraint firstItem="oiX-y9-Z2h" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="FON-qR-DQA"/>
-                            <constraint firstItem="oiX-y9-Z2h" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="180" id="MwZ-og-Sr0"/>
+                            <constraint firstItem="oiX-y9-Z2h" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-15" id="FON-qR-DQA"/>
+                            <constraint firstItem="oiX-y9-Z2h" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="40" id="MeE-Nn-MS0"/>
                             <constraint firstItem="T9f-B6-OTV" firstAttribute="top" secondItem="oiX-y9-Z2h" secondAttribute="bottom" constant="8" symbolic="YES" id="Nrw-gD-nJn"/>
                             <constraint firstItem="T9f-B6-OTV" firstAttribute="centerX" secondItem="oiX-y9-Z2h" secondAttribute="centerX" id="ZeG-L9-CBK"/>
                         </constraints>
