@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3EE4706A1D5B1D0B00D3CB31 /* WarsawNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarsawNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EE4706A1D5B1D0B00D3CB31 /* Warsaw Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Warsaw Native.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE4706D1D5B1D0B00D3CB31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EE4706F1D5B1D0B00D3CB31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3EE470721D5B1D0B00D3CB31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		3EE4706B1D5B1D0B00D3CB31 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3EE4706A1D5B1D0B00D3CB31 /* WarsawNative.app */,
+				3EE4706A1D5B1D0B00D3CB31 /* Warsaw Native.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,9 +93,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3EE470691D5B1D0B00D3CB31 /* WarsawNative */ = {
+		3EE470691D5B1D0B00D3CB31 /* Warsaw Native */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3EE4707C1D5B1D0B00D3CB31 /* Build configuration list for PBXNativeTarget "WarsawNative" */;
+			buildConfigurationList = 3EE4707C1D5B1D0B00D3CB31 /* Build configuration list for PBXNativeTarget "Warsaw Native" */;
 			buildPhases = (
 				3EE470661D5B1D0B00D3CB31 /* Sources */,
 				3EE470671D5B1D0B00D3CB31 /* Frameworks */,
@@ -105,9 +105,9 @@
 			);
 			dependencies = (
 			);
-			name = WarsawNative;
+			name = "Warsaw Native";
 			productName = WarsawNative;
-			productReference = 3EE4706A1D5B1D0B00D3CB31 /* WarsawNative.app */;
+			productReference = 3EE4706A1D5B1D0B00D3CB31 /* Warsaw Native.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -122,6 +122,7 @@
 				TargetAttributes = {
 					3EE470691D5B1D0B00D3CB31 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = LEK4SKE49E;
 					};
 				};
 			};
@@ -138,7 +139,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3EE470691D5B1D0B00D3CB31 /* WarsawNative */,
+				3EE470691D5B1D0B00D3CB31 /* Warsaw Native */,
 			);
 		};
 /* End PBXProject section */
@@ -283,10 +284,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WarsawNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.warsawjs.WarsawNative;
+				PRODUCT_BUNDLE_IDENTIFIER = com.warsawjs.warsawnative;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "87206915-48ed-4b78-9a81-a8ea042b9c9b";
 			};
 			name = Debug;
 		};
@@ -294,10 +298,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Productive Mobile AWSM GmbH";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Productive Mobile AWSM GmbH";
 				INFOPLIST_FILE = WarsawNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.warsawjs.WarsawNative;
+				PRODUCT_BUNDLE_IDENTIFIER = com.warsawjs.warsawnative;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "87206915-48ed-4b78-9a81-a8ea042b9c9b";
 			};
 			name = Release;
 		};
@@ -313,13 +320,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3EE4707C1D5B1D0B00D3CB31 /* Build configuration list for PBXNativeTarget "WarsawNative" */ = {
+		3EE4707C1D5B1D0B00D3CB31 /* Build configuration list for PBXNativeTarget "Warsaw Native" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3EE4707D1D5B1D0B00D3CB31 /* Debug */,
 				3EE4707E1D5B1D0B00D3CB31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

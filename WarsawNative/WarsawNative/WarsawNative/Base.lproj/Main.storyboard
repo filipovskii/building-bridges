@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WarsawNative" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Warsaw_Native" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,28 +21,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1L-6A-5ca">
-                                <rect key="frame" x="198" y="259" width="175" height="30"/>
+                                <rect key="frame" x="213" y="259" width="175" height="30"/>
                                 <state key="normal" title="WebView Communication"/>
                                 <connections>
                                     <segue destination="gKF-rl-Jf1" kind="show" id="guQ-OK-vc8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UyK-pN-Zeb">
-                                <rect key="frame" x="207" y="297" width="158" height="30"/>
+                                <rect key="frame" x="222" y="297" width="158" height="30"/>
                                 <state key="normal" title="WebView Google Login"/>
                                 <connections>
                                     <segue destination="SVO-Ms-pZf" kind="show" id="C97-t3-cuS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiJ-4H-Emd">
-                                <rect key="frame" x="245" y="335" width="82" height="30"/>
+                                <rect key="frame" x="260" y="335" width="82" height="30"/>
                                 <state key="normal" title="JS Executor"/>
                                 <connections>
                                     <segue destination="qqb-ua-9PE" kind="show" id="1w6-ab-ark"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHA-ol-4y1">
+                                <rect key="frame" x="242" y="373" width="117" height="30"/>
+                                <state key="normal" title="Slides of the Talk"/>
+                                <connections>
+                                    <action selector="goToSlides:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kpI-TF-3Nh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7P-e4-Gda">
+                                <rect key="frame" x="256" y="411" width="89" height="30"/>
+                                <state key="normal" title="Source Code"/>
+                                <connections>
+                                    <action selector="goToSource:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f0X-aJ-RAw"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="u8Y-ct-Ji3">
-                                <rect key="frame" x="185" y="40" width="200" height="200"/>
+                                <rect key="frame" x="195" y="40" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="NSv-gp-GvH"/>
                                     <constraint firstAttribute="width" constant="200" id="WRR-If-w9F"/>
@@ -51,14 +65,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="u8Y-ct-Ji3" firstAttribute="centerX" secondItem="c1L-6A-5ca" secondAttribute="centerX" id="5hg-bq-fEP"/>
+                            <constraint firstItem="u8Y-ct-Ji3" firstAttribute="centerX" secondItem="c1L-6A-5ca" secondAttribute="centerX" constant="-5.5" id="5hg-bq-fEP"/>
                             <constraint firstItem="UyK-pN-Zeb" firstAttribute="top" secondItem="c1L-6A-5ca" secondAttribute="bottom" constant="8" symbolic="YES" id="Ibo-km-8Kd"/>
+                            <constraint firstItem="MHA-ol-4y1" firstAttribute="top" secondItem="YiJ-4H-Emd" secondAttribute="bottom" constant="8" symbolic="YES" id="IvZ-hF-Brq"/>
+                            <constraint firstItem="MHA-ol-4y1" firstAttribute="centerX" secondItem="YiJ-4H-Emd" secondAttribute="centerX" id="K0b-UR-8oe"/>
                             <constraint firstItem="UyK-pN-Zeb" firstAttribute="centerX" secondItem="YiJ-4H-Emd" secondAttribute="centerX" id="QgJ-Jb-Oun"/>
+                            <constraint firstItem="s7P-e4-Gda" firstAttribute="top" secondItem="MHA-ol-4y1" secondAttribute="bottom" constant="8" symbolic="YES" id="V5I-WJ-bqu"/>
                             <constraint firstItem="u8Y-ct-Ji3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="Wqe-75-unc"/>
                             <constraint firstItem="c1L-6A-5ca" firstAttribute="top" secondItem="u8Y-ct-Ji3" secondAttribute="bottom" constant="19" id="bT0-Dd-5OC"/>
                             <constraint firstItem="UyK-pN-Zeb" firstAttribute="centerX" secondItem="c1L-6A-5ca" secondAttribute="centerX" id="ecT-0n-0jt"/>
                             <constraint firstItem="YiJ-4H-Emd" firstAttribute="top" secondItem="UyK-pN-Zeb" secondAttribute="bottom" constant="8" symbolic="YES" id="kbS-YB-w8J"/>
-                            <constraint firstItem="c1L-6A-5ca" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-15" id="rsr-HH-WWT"/>
+                            <constraint firstItem="s7P-e4-Gda" firstAttribute="centerX" secondItem="MHA-ol-4y1" secondAttribute="centerX" id="oGW-4D-tva"/>
+                            <constraint firstItem="c1L-6A-5ca" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rsr-HH-WWT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yfx-sq-dbt"/>
@@ -72,7 +90,7 @@
         <!--Web View Communication Controller-->
         <scene sceneID="qQL-e2-CKy">
             <objects>
-                <viewController id="gKF-rl-Jf1" customClass="WebViewCommunicationController" customModule="WarsawNative" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gKF-rl-Jf1" customClass="WebViewCommunicationController" customModule="Warsaw_Native" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fkJ-2A-JGa"/>
                         <viewControllerLayoutGuide type="bottom" id="9W2-dO-F7b"/>
@@ -148,7 +166,7 @@
         <!--Virtual Machine Controller-->
         <scene sceneID="Qdg-JU-mF5">
             <objects>
-                <viewController id="qqb-ua-9PE" customClass="JSVirtualMachineController" customModule="WarsawNative" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qqb-ua-9PE" customClass="JSVirtualMachineController" customModule="Warsaw_Native" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fny-vV-nGf"/>
                         <viewControllerLayoutGuide type="bottom" id="538-sT-mte"/>
@@ -242,7 +260,7 @@
         <!--Web View Google Login Controller-->
         <scene sceneID="aTp-0T-ZM2">
             <objects>
-                <viewController id="Zvi-8b-HIh" customClass="WebViewGoogleLoginController" customModule="WarsawNative" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Zvi-8b-HIh" customClass="WebViewGoogleLoginController" customModule="Warsaw_Native" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="E2V-gP-v4n"/>
                         <viewControllerLayoutGuide type="bottom" id="dj2-Eb-MlU"/>
@@ -275,7 +293,7 @@
         <!--Web View Google Actual Login Controller-->
         <scene sceneID="EUU-Jx-fRh">
             <objects>
-                <viewController id="SVO-Ms-pZf" customClass="WebViewGoogleActualLoginController" customModule="WarsawNative" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SVO-Ms-pZf" customClass="WebViewGoogleActualLoginController" customModule="Warsaw_Native" customModuleProvider="target" sceneMemberID="viewController">
                     <webView key="view" contentMode="scaleToFill" id="OJq-EF-Z6b">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
