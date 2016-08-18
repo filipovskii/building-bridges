@@ -6,3 +6,9 @@ WarsawJS.
 
 ![WarsawNative App](pictures/launch-screen.png)
 
+### Links
+
+[Slides online](http://filipovskii.github.io/building-bridges)
+
+[Warsaw Native in the App Store](https://itunes.apple.com/us/app/warsaw-native/id1143933761?ls=1&mt=8)
+
